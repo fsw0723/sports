@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b1c284-f427-4b92-8050-63671373e766" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/sports/model/cricket.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/sports/model/soccer.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sports/soccer.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sports/client.rb" afterPath="$PROJECT_DIR$/lib/sports/client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/client_spec.rb" afterPath="$PROJECT_DIR$/spec/client_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sports/model/cricket.rb" afterPath="$PROJECT_DIR$/lib/sports/model/cricket.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sports/fetcher.rb" afterPath="$PROJECT_DIR$/lib/sports/fetcher.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sports/parser.rb" afterPath="$PROJECT_DIR$/lib/sports/parser.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sports.rb" afterPath="$PROJECT_DIR$/lib/sports.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sports.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/sports.gemspec" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378044274879" ignored="false" />
-    <file path="/fetcher.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378633807870" ignored="false" />
+    <file path="/fetcher.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378648201388" ignored="false" />
     <file path="/soccer.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378181528960" ignored="false" />
-    <file path="/parser.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378646562283" ignored="false" />
+    <file path="/parser.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378646990238" ignored="false" />
     <file path="/spec_helper.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378046413060" ignored="false" />
     <file path="/parser_spec.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378046757954" ignored="false" />
-    <file path="/Dummy.txt" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378461537360" ignored="false" />
+    <file path="/Dummy.txt" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378646693717" ignored="false" />
     <file path="/fetcher_spec.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378047539928" ignored="false" />
     <file path="/sports.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378643049821" ignored="false" />
-    <file path="/client.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378643277426" ignored="false" />
+    <file path="/client.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378648124361" ignored="false" />
     <file path="/README.md" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378049031919" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelAPI/config/initializers/logging.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378091142036" ignored="false" />
     <file path="/logging.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378090243950" ignored="false" />
@@ -31,7 +28,7 @@
     <file path="$PROJECT_DIR$/../TravelAPI/Gemfile" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378179946628" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelAPI/app/controllers/application_controller.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378179946628" ignored="false" />
     <file path="/application_controller.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378176093341" ignored="false" />
-    <file path="/client_spec.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378643208710" ignored="false" />
+    <file path="/client_spec.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378648110473" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelAPI/config/initializers/quiet_assets.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378091136986" ignored="false" />
     <file path="/Gemfile" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378176883656" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelAPI/config/environments/development.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378178741478" ignored="false" />
@@ -47,6 +44,7 @@
     <file path="/hotel_search_response.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378189447398" ignored="false" />
     <file path="$PROJECT_DIR$/../TravelAPI/.idea/workspace.xml" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378628616330" ignored="false" />
     <file path="/crecket.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378642258665" ignored="false" />
+    <file path="/cricket.rb" changelist="a7b1c284-f427-4b92-8050-63671373e766" time="1378646763198" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +64,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parser.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parser.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/sports/parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="72" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.5502249">
+            <state line="37" column="29" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="client.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/sports/client.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="42" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+            <state line="13" column="22" selection-start="484" selection-end="484" vertical-scroll-proportion="0.2932331">
               <folding />
             </state>
           </provider>
@@ -87,7 +85,7 @@
       <file leaf-file-name="cricket.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/sports/model/cricket.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+            <state line="1" column="84" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,7 +94,7 @@
       <file leaf-file-name="client_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/client_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="44" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0">
+            <state line="45" column="47" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,7 +103,7 @@
       <file leaf-file-name="fetcher.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/sports/fetcher.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="317" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="18" column="112" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,12 +134,13 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/client.rb" />
         <option value="$PROJECT_DIR$/lib/sports/soccer.rb" />
-        <option value="$PROJECT_DIR$/lib/sports/fetcher.rb" />
         <option value="$PROJECT_DIR$/lib/sports/model/crecket.rb" />
         <option value="$PROJECT_DIR$/lib/sports.rb" />
-        <option value="$PROJECT_DIR$/lib/sports/client.rb" />
+        <option value="$PROJECT_DIR$/lib/sports/model/cricket.rb" />
         <option value="$PROJECT_DIR$/lib/sports/parser.rb" />
         <option value="$PROJECT_DIR$/spec/client_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/sports/fetcher.rb" />
+        <option value="$PROJECT_DIR$/lib/sports/client.rb" />
       </list>
     </option>
   </component>
@@ -424,13 +423,18 @@
       <created>1378089292872</created>
       <updated>1378089292872</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add cricket matches schedule parsing">
+      <created>1378646697187</created>
+      <updated>1378646697187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1420" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805756" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -445,7 +449,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -493,7 +496,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add soccer date, status parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cricket matches schedule parsing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -511,6 +514,7 @@
     <MESSAGE value="add test" />
     <MESSAGE value="add date parameter to soccer search" />
     <MESSAGE value="add soccer date, status parsing" />
+    <MESSAGE value="add cricket matches schedule parsing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -591,37 +595,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sports/model/cricket.rb">
+    <entry file="file://$PROJECT_DIR$/lib/sports/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sports/client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+        <state line="37" column="29" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/sports/fetcher.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="317" selection-end="466" vertical-scroll-proportion="0.0">
+        <state line="18" column="112" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/client_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="44" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0">
+        <state line="45" column="47" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sports/parser.rb">
+    <entry file="file://$PROJECT_DIR$/lib/sports/model/cricket.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="72" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.5502249">
+        <state line="1" column="84" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sports/client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="484" selection-end="484" vertical-scroll-proportion="0.2932331">
           <folding />
         </state>
       </provider>

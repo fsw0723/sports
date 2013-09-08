@@ -11,8 +11,8 @@ module Sports
       Nokogiri::HTML(open("http://scores.espn.go.com/mlb/scoreboard"))
     end
 
-    def fetch_cricket
-      Nokogiri::HTML(open("http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print;days=14;all=0;live=0;team=0"))
+    def fetch_cricket date_range
+      Nokogiri::HTML(open("http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print;days=#{date_range};all=0;live=0;team=0"))
     end
   end
 end

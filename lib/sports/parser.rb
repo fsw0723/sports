@@ -40,17 +40,14 @@ module Sports
       matches = []
       input.css('table').search('table > tr').each do |row|
         if(!row.css('p.fixMnth').text.empty?)
-          puts @date = Time.parse(row.css('p.fixMnth').text).strftime("%Y-%m-%d")
+          @date = Time.parse(row.css('p.fixMnth').text).strftime("%Y-%m-%d")
         elsif(row['class'] == 'ciResults')
-          puts row.xpath('./td[1]').text
-          puts row.xpath('./td[2]').text
-          puts "\n"
           cricket = Cricket.new
           cricket.date = @date
           team = row.xpath('./td[2]').text.gsub(/ v /i, ",").split(",")
-          puts team[0]
           cricket.home_team = team[0].gsub(/\r?\n/, '')
           cricket.away_team = team[1].gsub(/\r?\n/, '')
+          cricket.gmt_time = row.xpath('./td[1]').text.split(" ")[0]
           matches << cricket
         end
       end

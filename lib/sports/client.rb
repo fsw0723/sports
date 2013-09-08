@@ -8,8 +8,8 @@ module Sports
       return matches
     end
 
-    def fetch_cricket_games
-      matches = Sports::Parser.new.cricket_parser(Sports::Fetcher.new.fetch_cricket)
+    def fetch_cricket_games params
+      matches = Sports::Parser.new.cricket_parser(Sports::Fetcher.new.fetch_cricket(params[:date_range]))
       return matches
     end
   end
