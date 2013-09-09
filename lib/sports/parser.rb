@@ -2,10 +2,14 @@ require 'nokogiri'
 require 'tempfile'
 module Sports
   class Parser
-    def soccer_parser input
+    def initialize input_file
+      @input =   Nokogiri::HTML(open(input_file))
+      input_file.unlink
+    end
+    def soccer_parser
       matches = []
-      game_date = input.css('ul.game-dates').css('li#currentDate').text
-      input.css('div.group-set').each do |line|
+      game_date = @input.css('ul.game-dates').css('li#currentDate').text
+      @input.css('div.group-set').each do |line|
         game_name = line.css('div.mod-header').css('h2').text
         line.css('table tr').each do |tr|
           soccer = Soccer.new
@@ -21,20 +25,19 @@ module Sports
           else
             soccer.away_score = 0
             soccer.home_score = 0
-
           end
           soccer.away_team = tr.xpath('./td[4]').text
           soccer.game = game_name
           matches << soccer
         end
       end
-      return matches
+      matches
     end
 
-    def cricket_schedule_parser input
+    def cricket_schedule_parser
       @date
       matches = []
-      input.css('table').search('table > tr').each do |row|
+      @input.css('table').search('table > tr').each do |row|
         if (!row.css('p.fixMnth').text.empty?)
           @date = Time.parse(row.css('p.fixMnth').text).strftime("%Y-%m-%d")
         elsif (row['class'] == 'ciResults')
@@ -47,14 +50,13 @@ module Sports
           matches << cricket
         end
       end
-      return matches
+      matches
     end
 
-    def cricket_result_parser input_file
-      input = Nokogiri::HTML(open(input_file))
+    def cricket_result_parser
       matches = []
       series, cricket = nil
-      input.css('div.div630Pad').css('p').each do |row|
+      @input.css('div.div630Pad').css('p').each do |row|
         if (row['class'] == 'potMatchSeriesHeading')
           series = row.text
           next
@@ -74,7 +76,6 @@ module Sports
           matches << cricket
         end
       end
-      input_file.unlink
       matches
     end
 
