@@ -1,3 +1,3 @@
 class Cricket
-  attr_accessor :home_team, :away_team, :home_score, :away_score, :date, :gmt_time, :game, :status
+  attr_accessor :home_team, :away_team, :winner, :date, :gmt_time, :series, :location
 end

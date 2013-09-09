@@ -43,12 +43,23 @@ describe Sports::Client, :vcr do
 
   context "cricket searh" do
     it "should show match schedule" do
-      games = Sports::Client.new.fetch_cricket_games(:date_range => 14)
+      games = Sports::Client.new.fetch_cricket_games_schedule(:date_range => 14)
       games.first.home_team.should == "England"
       games.first.away_team.should == "Australia at Manchester"
       games.first.date.should == "2013-09-08"
       games.first.gmt_time.should == "09:15"
       games[2].date.should == "2013-09-10"
+    end
+
+    it "should show match result" do
+      games = Sports::Client.new.fetch_cricket_games_result
+      games.first.series.should == 'Test matches'
+      games.first.home_team.should == 'Zimbabwe'
+      games.first.away_team.should == 'Pakistan'
+      games.first.location.should == 'Harare'
+      games.first.winner.should == 'Pakistan'
+      games.first.date.should == 'Sep 3-7, 2013'
+      games[4].winner.should == 'abandoned'
     end
   end
 

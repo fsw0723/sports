@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'tempfile'
 
 module Sports
   class Fetcher
@@ -14,30 +15,16 @@ module Sports
     def fetch_cricket date_range
       Nokogiri::HTML(open("http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print;days=#{date_range};all=0;live=0;team=0"))
     end
+
+    def fetch_cricket_result
+      fetch_content "http://www.espncricinfo.com/ci/engine/match/scores/recent.html?days=7"
+    end
+
+    private
+    def fetch_content file_uri
+      file = Tempfile.new("file")
+      open(file_uri) {|uri| file.write(uri.read)}
+      file
+    end
   end
 end
-
-#require 'nokogiri'
-#require 'open-uri'
-#doc = Nokogiri::HTML(open("http://espn.go.com/sports/scores#upcoming"))
-#doc.css('div.group-set').each do |line|
-#  puts "Name:#{doc.xpath("//div[@id='completed']").text}"
-#  line.css('table tr').each do |tr|
-#    puts "status:#{tr.xpath('./td[1]').text}"
-#    puts "home team:#{tr.xpath('./td[2]').text}"
-#    puts "score:#{tr.xpath('./td[3]').text}"
-#    puts "away team:#{tr.xpath('./td[4]').text}"
-#    puts "\n"
-#  end
-#  puts "***********************************************"
-#end
-#
-#require 'nokogiri'
-#require 'open-uri'
-#doc = Nokogiri::HTML(open("http://scores.espn.go.com/mlb/scoreboard"))
-#doc.css('div#gamesLeft-1').css('div.mod-content').each do |line|
-#  puts "home team:#{line.css('div.team.home').css('div.team-capsule').css('a').text }"
-#  puts "away team:#{line.css('div.team.away').css('div.team-capsule').css('a').text }"
-#  puts "away team score:#{line.css('div.team.away').css('ul').xpath("li[1]").text }"
-#end
-
