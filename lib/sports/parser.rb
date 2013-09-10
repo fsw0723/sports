@@ -4,7 +4,6 @@ module Sports
   class Parser
     def initialize input_file
       @input =   Nokogiri::HTML(open(input_file))
-      input_file.unlink
     end
     def soccer_parser
       matches = []
