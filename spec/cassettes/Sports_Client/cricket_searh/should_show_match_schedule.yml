@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print%3Bdays=14%3Ball=0%3Blive=0%3Bteam=0
+    uri: http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print%3Bdays=7%3Ball=0%3Blive=0%3Bteam=0
     body:
       encoding: US-ASCII
       string: ''
@@ -21,27 +21,27 @@ http_interactions:
       Cache-Control:
       - public, max-age=15
       Emea-Info:
-      - wci063  0.413
+      - wci062  0.254
       Content-Type:
       - text/html; charset=UTF-8
       X-Varnish:
-      - '1261951645'
-      - '258885442'
+      - '1435401058'
+      - '397871608'
       X-Varnish-Cache:
       - MISS
       Date:
-      - Sun, 08 Sep 2013 12:27:29 GMT
+      - Sun, 15 Sep 2013 15:37:42 GMT
       Content-Length:
-      - '17769'
+      - '10022'
       Via:
-      - 1.1 SC10100_82_39
+      - 1.1 SC13300_82_78
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
       string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
         \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<!-- hostname:
-        wci063, country: sg, cluster: eap, created: 2013-09-08 12:27:29 -->\n<html
+        wci062, country: sg, cluster: eap, created: 2013-09-15 15:36:55 -->\n<html
         xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n <title>Cricket  fixtures,
         schedule | Future Tours Program | ESPN Cricinfo</title> \n <meta http-equiv=\"Content-Type\"
         content=\"text/html;charset=utf-8\" />\n <meta name=\"keywords\" content=\"\"
@@ -67,7 +67,7 @@ http_interactions:
         (nhours==0)\n   \tnhours=12;\n\n\tif (nsecn<10)\n \tnsecn=\"0\"+nsecn;\n\tif
         (nmins<10)\n\t nmins=\"0\"+nmins;\n\tdocument.ciClockform.gmtClock.value=nhours+\":
         \"+nmins+\": \"+nsecn;\n\tsetTimeout('startclock()',1000);\n} \nvar curDays
-        = 14;\nvar all = 0;\nvar live = 0;\n\nfunction printPage ( link ) {\n    var
+        = 7;\nvar all = 0;\nvar live = 0;\n\nfunction printPage ( link ) {\n    var
         href = link.href;\n    href = href + \";days=\" + curDays;\n\thref = href
         + \";all=\" + all;\n\thref = href + \";live=\" + live;\n    if ( $('#team').val()
         != '' ) {\n        href = href + \";team=\" + $('#team').val() ;\n    }\n
@@ -99,460 +99,74 @@ http_interactions:
         class=\"pnl650T\"></div>\n<div class=\"pnl650M\">\n\n\n\r\n <div class=\"div630Pad\">\r\n\r\n<div
         style=\"clear:both; padding:0px;\" id=\"monthlyFixrContent\">\r\n\r\n    \r\n<table
         id=\"fixTable\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"fixTable\">\r\n\r\n\r\n
-        \   \r\n    <tr month_header=\"1\"><td colspan=\"3\">\r\n    <p class=\"fixHdr\">Sep
-        2013</p>\r\n    </td>\r\n    </tr>\r\n\r\n    <tr id=\"1\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Sun Sep 8</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"1\" t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td
-        width=\"147\">09:15 GMT<span class=\"seprator\"> | </span>10:15 Local <br/><span
-        style='font-size:9px;color:#444'>17:15 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<a href=\"/the-ashes-2013/engine/match/566942.html\"
-        class=\"ciSeriesbrwlink\"><b>England v Australia</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Manchester, 2nd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
+        \   \r\n    <tr month_header=\"1\"><td colspan=\"4\">\r\n    <p class=\"fixHdr\">Sep
+        2013</p>\r\n    </td>\r\n    </tr>\r\n\r\n    <tr id=\"1\"><td colspan=\"4\">\r\n
+        \   <p class=\"fixMnth\">Sun Sep 15</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
+        \       <tr mid=\"1\" head_id=\"1\" t1=\"3379\" t2=\"4240\" s=\"8509\" f=\"10\"
+        class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
+        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
+        \           \r\n           </td>\r\n           <td width=\"220\">\r\n<a href=\"/ci/engine/match/664295.html\"
+        class=\"ciSeriesbrwlink\"><b>South Africa Women v Bangladesh Women</b></a><span
+        class=\"ciPhotoGalleryCaption\"> at Potchefstroom, 3rd T20I            </span>\r\n
+        \           </td>\r\n<td width=\"150\" height=\"35\" align=\"left\"><img width='31'
+        \ height='31' border='0' style='padding-right:5px;' align='absmiddle' title='Sunny'
+        alt='Sunny' src='http://i.imgci.com/weather/31x31/32.png'/>             \r\n
+        \                   <a class=\"fixWtrLnk\" onclick=\"return ciFixtutetooltip(this,'ciFixtutetooltipdiv1');\"
+        \ style=\"cursor: pointer;\">\r\n13 - 28&deg; C</td><td width=\"30\">\r\n\t\t<img
         src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
         alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
         \       \r\n        \r\n                <tr spacer_id=\"1\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"1\" t1=\"29\" t2=\"30\" s=\"6626\"
-        f=\"2\" class=\"ciResults\">\r\n<td width=\"147\">09:30 GMT<span class=\"seprator\">
-        | </span>10:30 Local <br/><span style='font-size:9px;color:#444'>17:30 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<a href=\"/wcl-championship-2011-13/engine/match/660841.html\"
-        class=\"ciSeriesbrwlink\"><b>Ireland v Scotland</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Belfast, ICC World Cricket League Championship            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"1\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"3\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Tue Sep 10</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"3\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>Zimbabwe v Pakistan</b><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 1</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"3\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"4\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Wed Sep 11</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"4\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>Zimbabwe v Pakistan</b><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 2</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"4\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"4\"
+        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"4\"/></tr>\r\n\r\n\r\n\r\n
+        \   <tr id=\"2\"><td colspan=\"4\">\r\n    <p class=\"fixMnth\">Mon Sep 16</p>\r\n
+        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"2\"
         t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td width=\"147\">13:00
         GMT<span class=\"seprator\"> | </span>14:00 Local  <span id=\"ciDN\" alt=\"Day
         and Night\" title=\"Day and Night\" width=\"27\" height=\"11\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/><span
         style='font-size:9px;color:#444'>21:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>England v Australia</b><span class=\"ciPhotoGalleryCaption\">
-        at Birmingham, 3rd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"4\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"5\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Thu Sep 12</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"5\"
-        t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>Zimbabwe
-        v Pakistan</b><span class=\"ciPhotoGalleryCaption\"> at Harare, 2nd Test -
-        <nobr>day 3</nobr>            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"5\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"5\" t1=\"3379\" t2=\"4240\" s=\"8509\"
-        f=\"10\" class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 1st T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"5\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"6\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Fri Sep 13</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"6\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>Zimbabwe v Pakistan</b><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 4</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"6\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"7\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Sat Sep 14</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"7\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>Zimbabwe v Pakistan</b><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 5</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"7\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"7\"
-        t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td width=\"147\">09:15
-        GMT<span class=\"seprator\"> | </span>10:15 Local <br/><span style='font-size:9px;color:#444'>17:15
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>England
-        v Australia</b><span class=\"ciPhotoGalleryCaption\"> at Cardiff, 4th ODI
-        \           </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"7\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"7\" t1=\"3379\" t2=\"4240\" s=\"8509\"
-        f=\"10\" class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 2nd T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"7\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"8\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Sun Sep 15</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"8\" t1=\"3379\" t2=\"4240\" s=\"8509\" f=\"10\"
-        class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 3rd T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"8\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"9\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Mon Sep 16</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"9\" t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td
-        width=\"147\">13:00 GMT<span class=\"seprator\"> | </span>14:00 Local  <span
-        id=\"ciDN\" alt=\"Day and Night\" title=\"Day and Night\" width=\"27\" height=\"11\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/><span
-        style='font-size:9px;color:#444'>21:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>England v Australia</b><span class=\"ciPhotoGalleryCaption\">
-        at Southampton, 5th ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"9\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"13\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Fri Sep 20</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"13\"
-        t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Benoni, 1st ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"13\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"15\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Sun Sep 22</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"15\"
-        t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Johannesburg, 2nd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"15\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n</table>\r\n\r\n
-        \      </div>\r\n    </div>\r\n</div>\r\n<div class=\"pnl650B\"></div>\r\n
-        \       \n\n<script language=\"javascript\">\n\t\t\tvar omniPageName = \"30
-        days Int\";\n\t\t\tvar omniSiteSection1 = \"fixtures\";\n\t\tvar omniCt =
-        \"fixtures\";\n</script>\n   <!-- END 650 AREA -->\n\n<div class=\"copyright\">\n
-        \    &copy; ESPN EMEA Ltd.\n    </div>\n</div>\n<!-- Main page Holder ends-->\n<script
-        language=\"javascript\">\n\t$.swapImage(\".swapImageClick\", true, true, \"click\");\n</script>\n</body>\n</html>\n"
-    http_version: 
-  recorded_at: Sun, 08 Sep 2013 12:27:28 GMT
-- request:
-    method: get
-    uri: http://www.espncricinfo.com/ci/content/current/match/fixtures/index.html?wrappertype=print%3Bdays=14%3Ball=0%3Blive=0%3Bteam=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - ! '*/*'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Apache
-      Cache-Control:
-      - public, max-age=15
-      Emea-Info:
-      - wci020  0.437
-      Content-Type:
-      - text/html; charset=UTF-8
-      X-Varnish:
-      - '1311018528'
-      - '298200681'
-      X-Varnish-Cache:
-      - MISS
-      Date:
-      - Tue, 10 Sep 2013 16:05:59 GMT
-      Content-Length:
-      - '18743'
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
-        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<!-- hostname:
-        wci020, country: sg, cluster: eap, created: 2013-09-10 16:21:24 -->\n<html
-        xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n <title>Cricket  fixtures,
-        schedule | Future Tours Program | ESPN Cricinfo</title> \n <meta http-equiv=\"Content-Type\"
-        content=\"text/html;charset=utf-8\" />\n <meta name=\"keywords\" content=\"\"
-        />\n <meta name=\"description\" content=\"\" />\n <meta name=\"robots\" content=\"index,
-        follow\" />\n <meta name=\"googlebot\" content=\"index, follow\" />\n <link
-        rel=\"icon\" type=\"image/vnd.microsoft.icon\" href=\"/favicon.ico\" />\n
-        <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n <link rel=\"icon\"
-        type=\"image/gif\" href=\"/favicon.gif\" />\n<script language=\"javascript\"
-        type=\"text/javascript\" src=\"/navigation/cricinfo/ci/jquery-1.3.2.min.js\"></script>\n<script
-        language=\"JavaScript\" type=\"text/javascript\" src=\"/navigation/cricinfo/ci/jquery.swapimage.js\"></script>\n<link
-        rel=\"stylesheet\" type=\"text/css\" href=\"/navigation/cricinfo/ci/default_print.css?\"/>\n<link
-        rel=\"stylesheet\" type=\"text/css\" href=\"/navigation/cricinfo/ci/scorecard.css?1358924802\"/>\n<script
-        language=\"JavaScript\" type=\"text/javascript\" src=\"/navigation/cricinfo/ci/default.js?1378465821\"></script>\n\n<script
-        language=\"JavaScript\">\n\tord=Math.random()*10000000000000000;\n</script>\n\n</head>\n<body
-        \ onload=\"window.print();\">\n<div id=\"ciMainContainer\">\n <div id=\"ciHomeMastContainer\">\n<div
-        id=\"ciHomeLogoholder\">\n\n <div style=\"position:relative;width:375px;float:left;margin-bottom:-5px;
-        z-index: 100000;\">\n  <a style=\"background:none;\" id=\"link\" href=\"/\"
-        title=\"ESPN Cricinfo\"><img src=\"http://i.imgci.com/espncricinfo/espncricinfologo.png\"
-        width=\"260px\" height=\"35px\"/></a>\n </div>\n\n</div> </div>\n\n   <!--
-        START 650 AREA -->\n\n<script language=\"JavaScript\">\n\nfunction startclock(){\n\tvar
-        thetime=new Date();\n\tvar nhours=thetime.getUTCHours();\n\tvar nmins=thetime.getUTCMinutes();\n\tvar
-        nsecn=thetime.getUTCSeconds();\n\n\tvar AorP=\" \";\n\tif (nhours>=24)\n    nhours-=12;\n\n\tif
-        (nhours==0)\n   \tnhours=12;\n\n\tif (nsecn<10)\n \tnsecn=\"0\"+nsecn;\n\tif
-        (nmins<10)\n\t nmins=\"0\"+nmins;\n\tdocument.ciClockform.gmtClock.value=nhours+\":
-        \"+nmins+\": \"+nsecn;\n\tsetTimeout('startclock()',1000);\n} \nvar curDays
-        = 14;\nvar all = 0;\nvar live = 0;\n\nfunction printPage ( link ) {\n    var
-        href = link.href;\n    href = href + \";days=\" + curDays;\n\thref = href
-        + \";all=\" + all;\n\thref = href + \";live=\" + live;\n    if ( $('#team').val()
-        != '' ) {\n        href = href + \";team=\" + $('#team').val() ;\n    }\n
-        \   if ( $('#series').val() != '' ) {\n        href = href + \";series=\"
-        + $('#series').val() ;\n    }\n    if ( $('#format').val() != '' ) {\n        href
-        = href + \";format=\" + $('#format').val() ;\n    }\n    window.location.href
-        = href;\n    return false;\n}\n\n\nfunction func_selected ( fid ) {\n    \n
-        \   $('table#fixTable tr').show();\n\n    var id = \"\";\n\n    if ( fid.filter_id
-        == 1 ) {\n       /* filter by team */ \n        var id =  $('#team').val();\n
-        \       if ( id == '') {\n            $('#team').val('All teams');\n        }\n
-        \       $('#series').val(\"\");\n        $('#format').val(\"\");\n        var
-        flag = 0;\n       \n        $('table#fixTable tr:not([t1=' + id + '])').hide();\n
-        \       $('table#fixTable tr:[t2=' + id + ']').show();\n\n        show_header
-        ('t1',id);\n        show_header ('t2',id);\n\n    } else if  ( fid.filter_id
-        \ == 2 ) {\n       /* filter by series */ \n        $('#team').val('All teams');\n
-        \       $('#format').val(\"\");\n\n        id = $('#series').val();\n        $('table#fixTable
-        tr:not([s=' + id + '])').hide();\n\n        show_header ('s',id);\n\n    }
-        else if ( fid.filter_id  == 3 ){\n       /* filter by formats */ \n        $('#team').val('All
-        teams');\n        $('#series').val(\"\");\n\n        id = $('#format').val();\n
-        \       $('table#fixTable tr:not([f=' + id + '])').hide();\n\n        show_header
-        ('f',id);\n\n    }\n    if ( id == \"\" ) {\n        $('table#fixTable tr').show();\n
-        \   }\n\n    $('table#fixTable tr:[head_id=0]').show();\n}\n\nfunction show_header
-        (attr,id) {\n\n    $('table#fixTable tr:[' + attr + '=' + id + ']').each(
-        function () {\n        hid =  $(this).attr('head_id');\n        m_id =  $(this).attr('mid');\n
-        \       $('table#fixTable tr:[id=' + hid + ']').show();\n        $('table#fixTable
-        tr:[spacer_id=' + hid + ']').show();\n        $('table#fixTable tr:[month_header='
-        + m_id + ']').show();\n    });\n}\n\n\n    $(document).ready(function() {\n
-        \   $('table#fixTable tr').show();\n\n    \n    });\n\n</script>\n\n\n\n<div
-        class=\"pnl650T\"></div>\n<div class=\"pnl650M\">\n\n\n\r\n <div class=\"div630Pad\">\r\n\r\n<div
-        style=\"clear:both; padding:0px;\" id=\"monthlyFixrContent\">\r\n\r\n    \r\n<table
-        id=\"fixTable\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"fixTable\">\r\n\r\n\r\n
-        \   \r\n    <tr month_header=\"1\"><td colspan=\"3\">\r\n    <p class=\"fixHdr\">Sep
-        2013</p>\r\n    </td>\r\n    </tr>\r\n\r\n    <tr id=\"1\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Tue Sep 10</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"1\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<a href=\"/zimbabwe-v-pakistan-2013/engine/match/659557.html\"
-        class=\"ciSeriesbrwlink\"><b>Zimbabwe v Pakistan</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 1</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"1\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"2\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Wed Sep 11</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"2\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<a href=\"/zimbabwe-v-pakistan-2013/engine/match/659557.html\"
-        class=\"ciSeriesbrwlink\"><b>Zimbabwe v Pakistan</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 2</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
+        \          <td width=\"220\">\r\n<b>England v Australia</b><span class=\"ciPhotoGalleryCaption\">
+        at Southampton, 5th ODI            </span>\r\n            </td>\r\n<td width=\"150\"
+        height=\"35\" align=\"left\"><img width='31'  height='31' border='0' style='padding-right:5px;'
+        align='absmiddle' title='PM Showers' alt='PM Showers' src='http://i.imgci.com/weather/31x31/39.png'/>
+        \            \r\n                    <a class=\"fixWtrLnk\" onclick=\"return
+        ciFixtutetooltip(this,'ciFixtutetooltipdiv2');\"  style=\"cursor: pointer;\">\r\n9
+        - 14&deg; C</td><td width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
         width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
         \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
         spacer_id=\"2\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"2\"
-        t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td width=\"147\">13:00
-        GMT<span class=\"seprator\"> | </span>14:00 Local  <span id=\"ciDN\" alt=\"Day
-        and Night\" title=\"Day and Night\" width=\"27\" height=\"11\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/><span
-        style='font-size:9px;color:#444'>21:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>England v Australia</b><span class=\"ciPhotoGalleryCaption\">
-        at Birmingham, 3rd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"2\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"3\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Thu Sep 12</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"3\"
-        t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<a
-        href=\"/zimbabwe-v-pakistan-2013/engine/match/659557.html\" class=\"ciSeriesbrwlink\"><b>Zimbabwe
-        v Pakistan</b></a><span class=\"ciPhotoGalleryCaption\"> at Harare, 2nd Test
-        - <nobr>day 3</nobr>            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"3\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"3\" t1=\"3379\" t2=\"4240\" s=\"8509\"
-        f=\"10\" class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
+        0px;\" colspan=\"4\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"6\"><td colspan=\"4\">\r\n
+        \   <p class=\"fixMnth\">Fri Sep 20</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
+        \       <tr mid=\"1\" head_id=\"6\" t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\"
+        class=\"ciResults\">\r\n<td width=\"147\">08:00 GMT<span class=\"seprator\">
+        | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00 SGT</span>
+        \           \r\n           </td>\r\n           <td width=\"220\">\r\n<b>South
         Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 1st T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"3\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"4\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Fri Sep 13</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"4\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<a href=\"/zimbabwe-v-pakistan-2013/engine/match/659557.html\"
-        class=\"ciSeriesbrwlink\"><b>Zimbabwe v Pakistan</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 4</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"4\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"5\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Sat Sep 14</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"5\" t1=\"9\" t2=\"7\" s=\"8427\" f=\"1\" class=\"ciResults\">\r\n<td
-        width=\"147\">08:00 GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span
-        style='font-size:9px;color:#444'>16:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<a href=\"/zimbabwe-v-pakistan-2013/engine/match/659557.html\"
-        class=\"ciSeriesbrwlink\"><b>Zimbabwe v Pakistan</b></a><span class=\"ciPhotoGalleryCaption\">
-        at Harare, 2nd Test - <nobr>day 5</nobr>            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"5\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"5\"
-        t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td width=\"147\">09:15
-        GMT<span class=\"seprator\"> | </span>10:15 Local <br/><span style='font-size:9px;color:#444'>17:15
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>England
-        v Australia</b><span class=\"ciPhotoGalleryCaption\"> at Cardiff, 4th ODI
-        \           </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"5\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"5\" t1=\"3379\" t2=\"4240\" s=\"8509\"
-        f=\"10\" class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 2nd T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
-        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
-        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
-        spacer_id=\"5\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"6\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Sun Sep 15</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"6\" t1=\"3379\" t2=\"4240\" s=\"8509\" f=\"10\"
-        class=\"ciResults\">\r\n<td width=\"147\">12:00 GMT<span class=\"seprator\">
-        | </span>14:00 Local <br/><span style='font-size:9px;color:#444'>20:00 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Potchefstroom, 3rd T20I            </span>\r\n            </td>\r\n<td
-        width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
+        at Benoni, 1st ODI            </span>\r\n            </td>\r\n<td width=\"150\"
+        height=\"35\" align=\"left\"><img width='31'  height='31' border='0' style='padding-right:5px;'
+        align='absmiddle' title='Mostly Sunny' alt='Mostly Sunny' src='http://i.imgci.com/weather/31x31/34.png'/>
+        \            \r\n                    <a class=\"fixWtrLnk\" onclick=\"return
+        ciFixtutetooltip(this,'ciFixtutetooltipdiv3');\"  style=\"cursor: pointer;\">\r\n9
+        - 26&deg; C</td><td width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
         width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
         \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
         spacer_id=\"6\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
-        0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"7\"><td colspan=\"3\">\r\n
-        \   <p class=\"fixMnth\">Mon Sep 16</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
-        \       <tr mid=\"1\" head_id=\"7\" t1=\"1\" t2=\"2\" s=\"7364\" f=\"2\" class=\"ciResults\">\r\n<td
-        width=\"147\">13:00 GMT<span class=\"seprator\"> | </span>14:00 Local  <span
-        id=\"ciDN\" alt=\"Day and Night\" title=\"Day and Night\" width=\"27\" height=\"11\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/><span
-        style='font-size:9px;color:#444'>21:00 SGT</span>            \r\n           </td>\r\n
-        \          <td width=\"350\">\r\n<b>England v Australia</b><span class=\"ciPhotoGalleryCaption\">
-        at Southampton, 5th ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"7\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"11\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Fri Sep 20</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"11\"
-        t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
+        0px;\" colspan=\"4\"/></tr>\r\n\r\n\r\n\r\n    <tr id=\"8\"><td colspan=\"4\">\r\n
+        \   <p class=\"fixMnth\">Sun Sep 22</p>\r\n    </td> \r\n    </tr>\r\n        \r\n
+        \       <tr mid=\"1\" head_id=\"8\" t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\"
+        class=\"ciResults\">\r\n<td width=\"147\">08:00 GMT<span class=\"seprator\">
+        | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00 SGT</span>
+        \           \r\n           </td>\r\n           <td width=\"220\">\r\n<b>South
         Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Benoni, 1st ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"11\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"13\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Sun Sep 22</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"13\"
-        t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Johannesburg, 2nd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"13\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"14\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Mon Sep 23</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"14\"
-        t1=\"284\" t2=\"3375\" s=\"8335\" f=\"15\" class=\"ciResults\">\r\n<td width=\"147\">03:30
-        GMT<span class=\"seprator\"> | </span>09:00 Local <br/><span style='font-size:9px;color:#444'>11:30
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>Australia
-        Under-19s v South Africa Under-19s</b><span class=\"ciPhotoGalleryCaption\">
-        at Visakhapatnam, Quadrangular Under-19 Series (India)            </span>\r\n
-        \           </td>\r\n<td width=\"30\">\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"14\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n
-        \       \r\n        <tr mid=\"1\" head_id=\"14\" t1=\"1854\" t2=\"3922\" s=\"8335\"
-        f=\"15\" class=\"ciResults\">\r\n<td width=\"147\">03:30 GMT<span class=\"seprator\">
-        | </span>09:00 Local <br/><span style='font-size:9px;color:#444'>11:30 SGT</span>
-        \           \r\n           </td>\r\n           <td width=\"350\">\r\n<b>India
-        Under-19s v Zimbabwe Under-19s</b><span class=\"ciPhotoGalleryCaption\"> at
-        Visakhapatnam, Quadrangular Under-19 Series (India)            </span>\r\n
-        \           </td>\r\n<td width=\"30\">\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"14\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n\r\n\r\n
-        \   <tr id=\"15\"><td colspan=\"3\">\r\n    <p class=\"fixMnth\">Tue Sep 24</p>\r\n
-        \   </td> \r\n    </tr>\r\n        \r\n        <tr mid=\"1\" head_id=\"15\"
-        t1=\"3379\" t2=\"4240\" s=\"8511\" f=\"9\" class=\"ciResults\">\r\n<td width=\"147\">08:00
-        GMT<span class=\"seprator\"> | </span>10:00 Local <br/><span style='font-size:9px;color:#444'>16:00
-        SGT</span>            \r\n           </td>\r\n           <td width=\"350\">\r\n<b>South
-        Africa Women v Bangladesh Women</b><span class=\"ciPhotoGalleryCaption\">
-        at Centurion, 3rd ODI            </span>\r\n            </td>\r\n<td width=\"30\">\r\n\t\t<img
-        src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\" width=\"26\" height=\"11\"
-        alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n        </td>\r\n        </tr>\r\n
-        \       \r\n        \r\n                <tr spacer_id=\"15\"><td bgcolor=\"#ffffff\"
-        width=\"630\" height=\"1\" style=\"padding: 0px;\" colspan=\"3\"/></tr>\r\n\r\n</table>\r\n\r\n
-        \      </div>\r\n    </div>\r\n</div>\r\n<div class=\"pnl650B\"></div>\r\n
-        \       \n\n<script language=\"javascript\">\n\t\t\tvar omniPageName = \"30
-        days Int\";\n\t\t\tvar omniSiteSection1 = \"fixtures\";\n\t\tvar omniCt =
-        \"fixtures\";\n</script>\n   <!-- END 650 AREA -->\n\n<div class=\"copyright\">\n
+        at Johannesburg, 2nd ODI            </span>\r\n            </td>\r\n<td width=\"150\"
+        height=\"35\" align=\"left\"></td><td width=\"30\">\r\n\t\t<img src=\"http://i.imgci.com/espncricinfo/ci_liveimg.gif\"
+        width=\"26\" height=\"11\" alt=\"Live\" title=\"Live\" border=\"0\">\r\n\r\n
+        \       </td>\r\n        </tr>\r\n        \r\n        \r\n                <tr
+        spacer_id=\"8\"><td bgcolor=\"#ffffff\" width=\"630\" height=\"1\" style=\"padding:
+        0px;\" colspan=\"4\"/></tr>\r\n\r\n</table>\r\n\r\n       </div>\r\n    </div>\r\n</div>\r\n<div
+        class=\"pnl650B\"></div>\r\n        \n\n<script language=\"javascript\">\n\t\t\tvar
+        omniPageName = \"7 days Int\";\n\t\t\t\n\t\t\tvar omniSiteSection1 = \"fixtures\";\n\t\tvar
+        omniCt = \"fixtures\";\n</script>\n   <!-- END 650 AREA -->\n\n<div class=\"copyright\">\n
         \    &copy; ESPN EMEA Ltd.\n    </div>\n</div>\n<!-- Main page Holder ends-->\n<script
         language=\"javascript\">\n\t$.swapImage(\".swapImageClick\", true, true, \"click\");\n</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Tue, 10 Sep 2013 16:05:59 GMT
+  recorded_at: Sun, 15 Sep 2013 15:37:43 GMT
 recorded_with: VCR 2.5.0

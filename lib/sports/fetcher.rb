@@ -23,6 +23,9 @@ module Sports
     def fetch_content file_uri
       file = Tempfile.new("file")
       open(file_uri) { |uri| file.write(uri.read) }
+      #out_file = File.new("out.txt", "w")
+      #open(file_uri) { |uri| out_file.puts(uri.read) }
+      #out_file.close
       file
     end
   end

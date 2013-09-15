@@ -3,8 +3,9 @@ require 'tempfile'
 module Sports
   class Parser
     def initialize input_file
-      @input =   Nokogiri::HTML(open(input_file))
+      @input = Nokogiri::HTML(open(input_file))
     end
+
     def soccer_parser
       matches = []
       game_date = @input.css('ul.game-dates').css('li#currentDate').text
@@ -42,9 +43,9 @@ module Sports
         elsif (row['class'] == 'ciResults')
           cricket = Cricket.new
           cricket.date = @date
-          team = row.xpath('./td[2]').text.gsub(/ v /, ',').split(",")
-          cricket.home_team = clean_text team[0]
-          cricket.away_team = clean_text team[1]
+          teams = row.xpath('./td[2]').text.gsub(/ v /, ',').split(",")
+          cricket.home_team = clean_text teams[0]
+          cricket.away_team = clean_text teams[1]
           cricket.gmt_time = row.xpath('./td[1]').text.split(" ")[0]
           matches << cricket
         end
@@ -63,14 +64,14 @@ module Sports
         if (row['class'] == 'potMatchHeading')
           cricket = Cricket.new
           cricket.series = series
-          text = row.css('a.potMatchLink').text
-          cricket.home_team = clean_text text.gsub(/ v /i, ' at ').split(' at ')[0]
-          cricket.away_team = clean_text text.gsub(/ v /i, ' at ').split(' at ')[1]
-          cricket.location = clean_text text.gsub(/ v /i, ' at ').split(' at ')[2]
+          match_info_text = row.css('a.potMatchLink').text.gsub(/ v /i, ' at ').split(' at ')
+          cricket.home_team = clean_text match_info_text[0]
+          cricket.away_team = clean_text match_info_text[1]
+          cricket.location = clean_text match_info_text[2]
           cricket.date = clean_text row.text.split(' - ')[1]
           next
         end
-        if(row['class'] == 'potMatchText mat_status')
+        if (row['class'] == 'potMatchText mat_status')
           cricket.winner = find_winner row.text
           matches << cricket
         end
@@ -80,15 +81,15 @@ module Sports
 
     private
     def clean_text text
-      text.gsub(/\t/, '').gsub(/\r/, '').gsub(/\n/,'').strip
+      text.gsub(/\t/, '').gsub(/\r/, '').gsub(/\n/, '').strip
     end
 
     def find_winner input
-      if(input.include? 'won')
+      if (input.include? 'won')
         winner = input.split(" ")[0]
-      elsif(input.include? 'drawn')
+      elsif (input.include? 'drawn')
         winner = 'drawn'
-      elsif(input.include? 'abandoned')
+      elsif (input.include? 'abandoned')
         winner = 'abandoned'
       end
       winner
